@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Umar Ardiansyah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Foto Profil -->
+    <div class="profile">
+      <h1>Umar Ardiansyah</h1>
+      <p class="subtitle">Lulusan SMK Muhammadiyah Gebang — Rekayasa Perangkat Lunak</p>
+      <p>tahun 2022-2025</p>
+    </div>
+
+    <!-- Data Diri -->
+    <div class="card">
+      <h2>Data Diri</h2>
+      <p><b>TTL:</b> Cirebon, 11 Maret 2007</p>
+      <p><b>Jenis Kelamin:</b> Laki-laki</p>
+      <p><b>Status:</b> Belum menikah</p>
+      <p><b>Kewarganegaraan:</b> Indonesia</p>
+    </div>
+
+    <!-- Kontak -->
+    <div class="card">
+      <h2>Kontak</h2>
+      <p>📞 0838-3016-1502</p>
+      <p>📧 ajuamar863@gmail.com</p>
+      <p>📍 Desa Melakasari</p>
+    </div>
+    <!-- Tentang Saya -->
+    <div class="card">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah lulusan baru dari SMK Muhammadiyah Gebang jurusan Rekayasa Perangkat Lunak. 
+        Terbiasa mengoperasikan komputer, mengelola software, dan memperbaiki jaringan. 
+        Saya siap bekerja dengan profesional sesuai aturan perusahaan.
+      </p>
+    </div>
+
+    <!-- Pendidikan -->
+    <div class="card">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>✔ SDN 1 Mlaka Sari (2013 - 2019)</li>
+        <li>✔ SMP Muhammadiyah Gebang (2019 - 2022)</li>
+        <li>✔ SMK Muhammadiyah Gebang (2022 - 2025)</li>
+      </ul>
+    </div>
+
+    <!-- Pengalaman Kerja -->
+    <div class="card">
+      <h2>Pengalaman Kerja</h2>
+      <p><b>PT Firqan Solusindo Mediatama</b></p>
+      <ul>
+        <li>✔ Memasang & memperbaiki jaringan internet</li>
+        <li>✔ Melayani customer terkait masalah jaringan</li>
+      </ul>
+    </div>
+        <!-- Kemampuan -->
+<div class="card" id="skills">
+  <h2>kemampuan</h2>
+        <ul>
+        <li>✔Ahli dalam pengoperasian komputer</li>
+        <li>✔ Bekerja dalam tim</li>
+        <li>✔ Memperbaiki jaringan trouble</li>
+      </ul>
+</div>
+
+        <!-- Media Sosial -->
+    <div class="card">
+      <h2>Media Sosial</h2>
+      <p>klik di bawah ini👇🏻</p>
+      <p>
+        <a href="https://www.tiktok.com/@umar53873" target="_blank" class="social-link">TikTok : umar53873</a>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/umar.ardiansyah11" target="_blank" class="social-link">Instagram : umarardiansyah11</a>
+      </p>
+    </div>
+    <footer>
+      © 2025 Umar Ardiansyah 
+    </footer>
+      di perbarui 4 oktober 2025
+  </div>
+
+  <script src="main.js"></script>
+  <div style="height: 400px;"></div>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  line-height: 1.9;
+  font-size: 26px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 92%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 20px 0 10px 0;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+  /* posisi awal */
+  opacity: 0;
+  transform: translateY(100px) scale(0.8);
+  transition: all 1s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.card.hide {
+  opacity: 0;
+  transform: translateY(-80px) scale(0.85);
+}
+
+.card h2 {
+  color: #ffd700;
+  margin-bottom: 25px;
+  font-size: 34px;
+  text-align: center;
+}
+
+ul li {
+  margin: 14px 0;
+  font-size: 26px;
+}
+
+.social-link {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00aced;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-link:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 22px;
+  margin-top: 50px;
+  color: #aaa;
+}
+  #skills {
+  margin-bottom: 100px;
+}
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    const visibleHeight = window.innerHeight * 0.6;
+
+    // Saat card masuk area tengah bawah layar → muncul
+    if (rect.top < visibleHeight && rect.bottom > 100) {
+      card.classList.add('show');
+      card.classList.remove('hide');
+    } 
+    // Saat card sudah melewati atas layar → menghilang perlahan
+    else if (rect.bottom < 50 || rect.top > window.innerHeight) {
+      card.classList.add('hide');
+      card.classList.remove('show');
+    }
+  });
+});
